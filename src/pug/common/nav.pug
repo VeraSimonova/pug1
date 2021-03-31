@@ -1,0 +1,19 @@
+mixin nav(className)
+	nav(class = className)
+		ul(class = className +"_list")
+			li(class = className +"__item")
+				a(class = className + "__link" href="main.html")
+					|main
+			li(class = className +"__item")
+				a(class = className + "__link" href="contact.html")
+					|contact
+
+mixin table
+	tr
+		td
+			p
+				| 1
+		td
+			p
+				| 2
+	block mixin1
